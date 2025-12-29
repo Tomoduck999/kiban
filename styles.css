@@ -303,7 +303,8 @@ a {
     animation: arrowFloat 3s ease-in-out infinite;
     width: 130px;
     height: 130px;
-    display: block;
+    display: block !important;
+    visibility: visible !important;
 }
 
 .hero-arrow .arrow-svg {

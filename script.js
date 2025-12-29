@@ -259,6 +259,8 @@ const positionArrow = () => {
         arrow.style.top = `${arrowY}px`;
         arrow.style.transform = 'translateY(-50%)';
         arrow.style.display = 'block';
+        arrow.style.visibility = 'visible';
+        arrow.style.opacity = '0.9';
         
         // Calculate angle to point at "無料診断を受ける" button center (pointing right)
         const deltaX = ctaButtonCenterX - arrowX;
