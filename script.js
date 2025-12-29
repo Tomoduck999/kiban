@@ -252,7 +252,7 @@ const positionArrow = () => {
         // Position arrow to the left of "無料診断を受ける" button, pointing right towards it
         // 矢印は「無料診断を受ける」ボタンの左側に配置
         const arrowX = ctaButtonRect.left - wrapperRect.left - 150; // ボタンの左150px
-        const arrowY = ctaButtonCenterY - 150; // ボタンの中心より10px下
+        const arrowY = ctaButtonCenterY + 10; // ボタンの中心より10px下
         
         arrow.style.right = 'auto';
         arrow.style.left = `${arrowX}px`;
