@@ -1,6 +1,4 @@
-# KIBAN - ITコンサルティングサービス
-
-業務効率化とIT化をサポートするKIBANのウェブサイトです。
+<!-- This file is intentionally left minimal to allow index.html to be served by GitHub Pages -->
 
 ## デプロイ方法
 
