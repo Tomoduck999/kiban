@@ -375,7 +375,9 @@ a {
 
 @media (max-width: 768px) {
     .hero-arrow {
-        display: none;
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
     }
 }
 

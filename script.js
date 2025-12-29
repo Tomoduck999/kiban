@@ -243,6 +243,13 @@ const positionArrow = () => {
         return;
     }
     
+    // Hide arrow on mobile devices (768px and below)
+    if (window.innerWidth <= 768) {
+        arrow.style.display = 'none';
+        arrow.style.visibility = 'hidden';
+        return;
+    }
+    
     if (!ctaButton || !secondaryButton || !heroCtaWrapper) {
         console.warn('CTA elements not found, hiding arrow');
         arrow.style.display = 'none';
