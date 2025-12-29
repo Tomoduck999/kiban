@@ -238,6 +238,17 @@ const positionArrow = () => {
     const secondaryButton = document.querySelector('.btn-secondary'); // サービスを見るボタン
     const heroCtaWrapper = document.querySelector('.hero-cta-wrapper');
     
+    if (!arrow) {
+        console.warn('Arrow element not found');
+        return;
+    }
+    
+    if (!ctaButton || !secondaryButton || !heroCtaWrapper) {
+        console.warn('CTA elements not found, hiding arrow');
+        arrow.style.display = 'none';
+        return;
+    }
+    
     if (arrow && ctaButton && secondaryButton && heroCtaWrapper) {
         const wrapperRect = heroCtaWrapper.getBoundingClientRect();
         const ctaButtonRect = ctaButton.getBoundingClientRect();
